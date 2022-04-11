@@ -1,0 +1,27 @@
+[
+    {
+        "question" : "Question 1",
+        "answer" : "1",
+        "a1": "This is the answer",
+        "a2": "This isn't the answer",
+        "a3": "Wrong Answer",
+        "a4": "first one is the answer"
+
+    },
+    {
+        "question" : "Which league of legends character says 'Your will, my hands?'",
+        "answer" : "2",
+        "a1": "Sett",
+        "a2": "Lee Sin",
+        "a3": "Vi",
+        "a4": "Kassadin"
+    },
+    {
+        "question" : "Nani",
+        "answer" : "1",
+        "a1": "Baka",
+        "a2": "???",
+        "a3": "huh??",
+        "a4": "yeah..."
+    }
+]

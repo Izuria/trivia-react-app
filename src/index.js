@@ -4,11 +4,12 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import TriviaGame from './TriviaGame'
 
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />
-    <App />
+    <TriviaGame />
   </StrictMode>,
   document.getElementById('root')
 );
