@@ -1,20 +1,17 @@
-import {React, Component, useEffect} from 'react';
+import {React, Component} from 'react';
 import {
   ChakraProvider,
   Box,
   Text,
   Link,
   VStack,
-  Code,
   Grid,
   GridItem,
   theme,
   Button,
-  ButtonGroup,
   SimpleGrid,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
 import questionList from './json/triviaCode.json'
 
 class TriviaGame extends Component{
@@ -49,13 +46,13 @@ class TriviaGame extends Component{
 
     choiceButton = (choice, cID) =>
     {
-      return <Button colorScheme='teal' variant='solid' onClick = {this.checkAnswer} data_id = {cID} >{choice}</Button>
+      return <Button ml='2vw' mr='2vw' colorScheme='pink' variant='solid' onClick = {this.checkAnswer} data_id = {cID} >{choice}</Button>
     }
 
     renderChoices = () =>
     {
         return(
-            <SimpleGrid columns={2} spacing={10} p = {4}>
+            <SimpleGrid columns={[1, null, 2]} width='100vw' spacing={10} p = {4}>
               {this.choiceButton(this.state.a1, "1")}
               {this.choiceButton(this.state.a2, "2")}
               {this.choiceButton(this.state.a3, "3")}
@@ -67,8 +64,8 @@ class TriviaGame extends Component{
     renderQuestion = () =>
     {
         return(
-            <Box p={4} >
-              <Text fontSize = '3xl'>
+            <Box p={4} height='15vh'>
+              <Text fontSize='4vmin'  >
                 {this.state.question}
               </Text>
             </Box>
@@ -88,8 +85,8 @@ class TriviaGame extends Component{
     gameOver = () =>
     {
         return(
-            <Text>
-                Congrats on finishing! You've gotten {this.state.playerScore}/{this.state.totalQuestions} questions correct.
+            <Text fontSize = '4vmin'>
+                Congrats on finishing! You've gotten {this.state.playerScore/this.state.totalQuestions*100}% or {this.state.playerScore}/{this.state.totalQuestions} questions correct.
             </Text>
         )
     }
@@ -141,17 +138,17 @@ class TriviaGame extends Component{
           <ChakraProvider theme={theme}>
             <Grid templateColumns='repeat(2, 1fr)' gap={6} p={3} minH ='25vh'>
               <GridItem> 
-                <Link href='https://github.com/Izuria/' isExternal>Check out my GitHub!</Link>
+                <Link fontSize ='12px' href='https://github.com/Izuria/' isExternal>Check out my GitHub!</Link>
               </GridItem>
               <GridItem colStart={3}> 
                 <ColorModeSwitcher justifySelf="flex-end" />
               </GridItem>
             </Grid>
   
-            <Box textAlign="center">              
+            <Box textAlign="center" >              
                 { !this.state.gameStart && !this.state.gameOver && 
-                  <VStack bg='purple'>
-                    <Text fontSize='6xl'>
+                  <VStack>
+                    <Text fontSize='36px'>
                       Totally Random Trivia Game!
                     </Text>
                     <Text fontSize='md'>
@@ -171,7 +168,7 @@ class TriviaGame extends Component{
   
                 <VStack spacing={8}>
   
-                <Box mt='15vh'>
+                <Box mt='5vh'>
                 { this.state.gameStart && !this.state.gameOver && 
                   this.renderChoices()
                 }
