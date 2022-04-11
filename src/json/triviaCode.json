@@ -1,0 +1,83 @@
+[
+    {
+        "question" : "Question 1",
+        "answer" : "1",
+        "a1": "This is the answer",
+        "a2": "This isn't the answer",
+        "a3": "Wrong Answer",
+        "a4": "first one is the answer"
+
+    },
+    {
+        "question" : "Which league of legends character says 'Your will, my hands?'",
+        "answer" : "2",
+        "a1": "Sett",
+        "a2": "Lee Sin",
+        "a3": "Vi",
+        "a4": "Kassadin"
+    },
+    {
+        "question" : "Very Long question ifoisahnfoahegouhaowguawogh hgoawehgnoaw gbidagbowuagoabwrgou oawrugbnoawebugowaeubg oawdenugjoaerngobaubg jaorgbnueajgb",
+        "answer" : "1",
+        "a1": "this is the answer",
+        "a2": "???",
+        "a3": "huh??",
+        "a4": "yeah..."
+    },
+    {
+        "question" : "What frontend library was used to create this application?",
+        "answer" : "3",
+        "a1": "MongoDB",
+        "a2": "Express.js",
+        "a3": "React",
+        "a4": "Node.js"
+    },
+    {
+        "question" : "What is the capital of Canada?",
+        "answer" : "4",
+        "a1": "Toronto",
+        "a2": "Vancouver",
+        "a3": "Montreal",
+        "a4": "Ottawa"
+    },
+    {
+        "question" : "What car is nicknamed the Hachi-Roku?",
+        "answer" : "2",
+        "a1": "Nissan Skyline R34",
+        "a2": "Toyota AE86",
+        "a3": "Toyota Supra",
+        "a4": "Honda S2000"
+    },
+    {
+        "question" : "What hololive virtual youtuber calls their fans 'Fandead' ",
+        "answer" : "4",
+        "a1": "Pekora",
+        "a2": "Flare",
+        "a3": "Aqua",
+        "a4": "Rushia"
+    },
+    {
+        "question" : "How many fingers does a typical hand have?",
+        "answer" : "2",
+        "a1": "4",
+        "a2": "5",
+        "a3": "10",
+        "a4": "32"
+    },
+    {
+        "question" : "What is the lowest level programming language listed here?",
+        "answer" : "1",
+        "a1": "Assembly",
+        "a2": "C",
+        "a3": "Python",
+        "a4": "JavaScript"
+    },
+    {
+        "question" : "Answer is 4",
+        "answer" : "4",
+        "a1": "one",
+        "a2": "two",
+        "a3": "three",
+        "a4": "four!"
+    }
+]
